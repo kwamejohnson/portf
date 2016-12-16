@@ -1,0 +1,32 @@
+<div ng-controller="projectTechController">
+
+
+<!-- /*<style media="screen">
+  h4{
+    text-align: center;
+  }
+</style>*/ -->
+
+{{ message }}
+<table border="1px: white">
+  <tr>
+    <th>Projects</th>
+    <th>Technologies</th>
+  </tr>
+  <tr ng-repeat="project in projectTech.projects[0]">
+    <td>{{ project }}</td>
+    <td>{{ project.technologies }}</td>
+
+  </tr>
+</table>
+
+<!-- <h4><b>My Projects</b></h4>
+<ul ng-repeat="project in projectTech">
+  <li>{{ project }}</li>
+</ul>
+
+<h4><b>Technologies</b></h4>
+<ul ng-repeat="technology in technologies">
+  <li>{{ technology }}</li>
+</ul> -->
+</div>

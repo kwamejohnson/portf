@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = 'kjAp'>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="kwamejohnson.com">
+    <meta name="author" content="Kwame Johnson">
+
+<!-- ======FAVICON========== -->
+                <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+                <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+                <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+                <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+                <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+                <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+                <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+                <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+                <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+                <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+                <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+                <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+                <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+                <link rel="manifest" href="/manifest.json">
+                <meta name="msapplication-TileColor" content="#ffffff">
+                <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+                <meta name="theme-color" content="#ffffff">
+<!-- ======================= -->
+    <title>kwamejohnson.com</title>
+
+
+    <!-- <script src="../../bower_components/angular/angular.js" charset="utf-8"></script>
+    <script src="../../bower_components/angular-route/angular-route.js" charset="utf-8"></script> -->
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="cover.css" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+
+    <script src="app.js" charset="utf-8"></script>
+    <script src="cvController.js" charset="utf-8"></script>
+    <script src="aboutController.js" charset="utf-8"></script>
+    <script src="projectTechController.js" charset="utf-8"></script>
+    <script src="codingBucketlistController.js" charset="utf-8"></script>
+
+    <style media="screen">
+      *{
+        font-family: sans-serif;
+        list-style: none;
+      }
+      .top{
+        text-align: center;
+      }
+
+      .nav .li {
+        font-size: 5px;
+      }
+    </style>
+
+  </head>
+  <body>
+
+  <div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+      <div class="cover-container">
+
+        <div class="masthead clearfix">
+
+          <div class="inner">
+
+            <!-- <h5 class="masthead-brand">kwamejohnson.com</h5> -->
+            <img class="masthead-brand" src="headshot.png" alt="headshot" style="width: 50px">
+                <nav>
+                    <ul class="nav masthead-nav">
+                      <li class="active"><a href="#/">Home</a></li>
+                      <li><a href="#/about">About me</a></li>
+                      <li><a href="#/cv">CV</a></li>
+                      <li><a href="#/projectsandtechnologies">Projects/Technologies</a></li>
+                      <li><a href="#/bucketlist">Coding Bucketlist</a></li>
+
+                    </ul>
+                </nav>
+
+
+                <div class="inner cover">
+                  <div style="font-size: 10px; text-align: left; margin-top:5px; padding-left: 20px">
+                      <br>
+                      <p  class="cover-heading">Hi, I'm Kwame</p>
+                      <p style="line-height:50%" class="cover-heading">I'm a Software Engineer.</p>
+                  </div>
+
+                  <!-- <p class="lead">MD from Duke + 5+ years as a medical editor + almost 2 years in software development</p> -->
+                  <!-- <p class="lead">
+                    <a href="#" class="btn btn-lg btn-default">Learn more</a>
+                  </p> -->
+                </div>
+
+
+      <br>
+      <br>
+      <!-- <img src="FJ0A5296.JPG" alt="not this again" style="width: 400px"> -->
+
+
+    </div>
+
+    <div ng-view = ""></div>
+
+
+    <!-- <div class="mastfoot">
+                <div class="inner">
+                  <p><a href="www.kwamejohnson.com">kwamejohnson.com</a>, by <a href="clearbuoyant.com">ClearBuoyant</a>.</p>
+                </div>
+              </div> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- <script type="text/javascript">
+
+    var app = angular.module('kjAp', ['ngRoute']);
+
+    app.config(function($routeProvider){
+      $routeProvider
+        .when('/about', {
+          templateUrl: "aboutme.html"
+          // templateUrl: "./static/partials/aboutme.html"
+          // templateUrl: '../partials/aboutme.html'
+        })
+        .when('/cv', {
+          templateUrl: "cv.html"
+          // templateUrl: "./static/partials/aboutme.html"
+          // templateUrl: '../partials/aboutme.html'
+        })
+        .otherwise({
+          redirectTo: "/"
+        });
+    });
+
+    app.controller('cvController', ['$scope', function($scope){
+
+    console.log("in cvController");
+    $scope.cv = "CV || CV || CV"
+    }])
+
+
+    </script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>

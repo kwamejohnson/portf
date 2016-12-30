@@ -10,8 +10,11 @@ div{
 	/*background-image: url("http://i64.tinypic.com/i1cg34.png");
 	background-repeat: no-repeat;
 	background-size: contain ;*/
-	width: 45%;
+	width: 100%;
   margin: auto;
+	padding: 0px;
+	/*border: 1px green solid;*/
+
 }
 .dots div, svg{
 	/*display: inline;*/
@@ -21,6 +24,7 @@ text{
 }
 #header{
 	text-align: left;
+	cursor: pointer;
 	/*padding-top: 20px;*/
 }
 hr {
@@ -40,18 +44,50 @@ hr {
 	text-align:center;;
   cursor: default;
 }
-.dots h4,h6{
+.scholarship h4,
+.scholarship h5,
+.scholarship h6,
+.aboutMe h4,
+.aboutMe h5,
+.aboutMe h6{
+	color: #AFAAAA;
+	text-align: center;
+}
+.scholarship,
+.scholarship p,
+.aboutMe,
+.aboutMe p{
+	text-align: justify;
+	color: #AFAAAA;
+}
+.tablekj{
+	color: #AFAAAA;
+	border: 1px solid white;
+	/*border-collapse: collapse;*/
+}
+
+.tablekj img{
+	height: 10%;
+}
+.projects th{
+	text-align: center;
+	font-weight: bold;
+}
+
+
+.dots h4,
+.dots h6{
 	display: inherit;
 	color: #AFAAAA;
-	margin-left: 25%;
+	/*margin-left: 25%;*/
 	margin-top: -.5%;
 }
 .dots svg{
 
 }
 .centerDiv{
-	width: 70%;
-	margin-left:0%;
+	width: 100%;
+	/*margin-left:0%;*/
 }
 .centerK{
 	padding-left: 0px;
@@ -62,6 +98,9 @@ hr {
 	display: inline-block;
 	text-align: center;
 	margin-top: 1%;
+	margin-bottom: 5%;
+	max-height: 250px;
+	cursor: pointer;
 }
 #circle{
 	margin-top: 20%
@@ -72,7 +111,7 @@ hr {
 	border-radius: 300px;
 	-webkit-animation:circleL 6s infinite;
 	display: inline-block;
-	margin-left: 2%;
+	/*margin-left: 2%;*/
 	/*margin-right: -2%;*/
 }
 #circleR{
@@ -81,7 +120,7 @@ hr {
 	border-radius: 300px;
 	-webkit-animation:circleR 9s infinite;
 	display: inline-block;
-	margin-left: -2%
+	/*margin-left: -2%*/
 }
 /*_______________________________*/
 .container2 {
@@ -116,7 +155,7 @@ hr {
 
 
 .main{
-	min-height: 430px;
+	min-height: auto;
 	width: 100%;
 	padding-top: 1%;
 	padding-bottom: 1%;
@@ -158,7 +197,11 @@ body{
 	background-position: center;
 	background-size: cover;*/
 	background-color: #162344;
-	width: 50%;
+
+	/*background-image: url("http://i65.tinypic.com/b4z1c9.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+	background-size: cover;*/
 }
 /*#F1CBA6*/
 .summary{
@@ -347,8 +390,8 @@ _____________________________________
 	top:43%;
 	border: 1px #FF0C1E ridge;
 }
-.main.container{
-	height: 900px;
+.main.container-fluid{
+	height: 100%;
 }
 .main.row{
 	min-height: 500px;
@@ -377,6 +420,7 @@ button p{
 .connect p,
 .technologies p,
 .bucketlist p,
+.aboutMenu p,
 .buttonsFooter p{
 	color: #AFAAAA;
 }
@@ -422,6 +466,8 @@ body{
 
 .row{
 	width: 100%;
+	margin-right: 0px;
+	margin-left: 0px;
 }
 .buttonsFooter li{
 	display: inline-block;
@@ -434,6 +480,7 @@ body{
 .connect button,
 .bucketlist button,
 .projects button,
+.aboutMenu button,
 .technologies button{
 	border-radius: 200px;
 	height: 100px;
@@ -447,12 +494,7 @@ body{
 	padding: 0px;
 }
 
-.connect ul{
-	list-style-type: none;
-	text-align: center;
-	padding: 0;
-	text-decoration: none;
-}
+
 
 
 .header img{
@@ -462,7 +504,8 @@ body{
 .technologies{
 	text-align: center;
 }
-.projects{
+.projects,
+.aboutMenu{
 	text-align: center;
 	display: block;
 	width: 100%;
@@ -473,13 +516,6 @@ body{
 	width: 100%;
 }
 
-.technologies ul{
-	list-style-type: none;
-	text-align: center;
-	display: inline-block;
-	padding-left: 0;
-	width: 10%
-}
 .btn:hover {
     background-color: #D0D0D0;
 }
@@ -489,10 +525,14 @@ body{
 .btn:visited{
 	background-color: #D0D0D0;
 }
-.projects ul{
+.technologies ul,
+.projects ul,
+.aboutMenu ul,
+.connect ul{
 	list-style-type: none;
 	text-align: center;
 	padding: 0;
+	text-decoration: none;
 }
 
 }
